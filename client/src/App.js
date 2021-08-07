@@ -12,7 +12,7 @@ const httpLink = createHttpLink({
 const client = new ApolloClient({
   link: httpLink,
   cache: new InMemoryCache(),
-});
+})
 function App() {
   return (
     <ApolloProvider client={client}>
